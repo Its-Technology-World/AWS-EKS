@@ -22,5 +22,7 @@ nodeGroups:
 
     # Instance Type of the Node
     instanceType: t2.micro
+
+    # Attaching the public key for SSH
     ssh:
       publicKeyName: GeneralKey
