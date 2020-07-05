@@ -1,0 +1,2 @@
+# Specifying the ApiVersion
+apiVersion: eksctl.io/v1alpha5
