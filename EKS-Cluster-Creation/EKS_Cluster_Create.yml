@@ -8,6 +8,8 @@ kind: ClusterConfig
 metadata:
  # Specifying the name of the cluster!
   name: TWClsuter
+
+  # Specifying the region in which we have to launch the cluster.
   region: us-east-1
 
 nodeGroups:
