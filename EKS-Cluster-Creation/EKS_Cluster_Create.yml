@@ -6,7 +6,7 @@ kind: ClusterConfig
 
 # Specifying the metadata of the cluster to launch!
 metadata:
- #
+ # Specifying the name of the cluster!
   name: TWClsuter
   region: us-east-1
 
