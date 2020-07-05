@@ -19,6 +19,8 @@ nodeGroups:
 
     # Capacity of the node group!
     desiredCapacity: 3
+
+    # Instance Type of the Node
     instanceType: t2.micro
     ssh:
       publicKeyName: GeneralKey
