@@ -12,6 +12,7 @@ metadata:
   # Specifying the region in which we have to launch the cluster.
   region: us-east-1
 
+# Specifying the node group to launch
 nodeGroups:
   - name: ng-1
     desiredCapacity: 3
