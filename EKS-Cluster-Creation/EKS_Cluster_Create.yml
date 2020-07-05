@@ -4,7 +4,9 @@ apiVersion: eksctl.io/v1alpha5
 # Specifying the kind of the resource
 kind: ClusterConfig
 
+# Specifying the metadata of the cluster to launch!
 metadata:
+ #
   name: TWClsuter
   region: us-east-1
 
