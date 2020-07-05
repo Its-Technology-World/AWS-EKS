@@ -14,7 +14,9 @@ metadata:
 
 # Specifying the node group to launch
 nodeGroups:
+  # Name of the node Group
   - name: ng-1
+
     desiredCapacity: 3
     instanceType: t2.micro
     ssh:
