@@ -1,0 +1,41 @@
+# Specifying the ApiVersion
+apiVersion: eksctl.io/v1alpha5
+
+# Specifying the kind of the resource
+kind: ClusterConfig
+
+# Specifying the metadata of the cluster to launch!
+metadata:
+ # Specifying the name of the cluster!
+  name: TWClsuter
+
+  # Specifying the region in which we have to launch the cluster.
+  region: ap-south-1
+
+# Specifying the node group to launch
+nodeGroups:
+  # Name of the node Group
+  - name: ng-1
+
+    # Capacity of the node group!
+    desiredCapacity: 3
+
+    # Instance Type of the Node
+    instanceType: t2.micro
+
+    # Attaching the public key for SSH
+    ssh:
+      publicKeyName: MyKeyFinal
+
+  - name: ng-mixed
+    minSize: 2
+    maxSize: 5
+    instancesDistribution:
+      maxPrice: 0.015
+      instanceTypes: t2.micro
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 50
+      spotInstancePools: 2
+      ssh:
+        publicKeyName: MyKeyFinal
+
