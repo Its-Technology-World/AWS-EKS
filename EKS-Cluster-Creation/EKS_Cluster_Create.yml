@@ -10,7 +10,7 @@ metadata:
   name: TWClsuter
 
   # Specifying the region in which we have to launch the cluster.
-  region: us-east-1
+  region: ap-south-1
 
 # Specifying the node group to launch
 nodeGroups:
@@ -25,5 +25,5 @@ nodeGroups:
 
     # Attaching the public key for SSH
     ssh:
-      publicKeyName: GeneralKey
+      publicKeyName: MyKeyFinal
 
