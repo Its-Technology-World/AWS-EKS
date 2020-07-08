@@ -1,0 +1,12 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+
+metadata:
+  name: tw-sc
+provisioner:
+  kubernetes.io/aws-ebs
+
+parameters:
+  type: io1
+
+reclaimPolicy: Retain
