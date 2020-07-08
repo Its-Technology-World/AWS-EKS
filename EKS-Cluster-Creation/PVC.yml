@@ -2,10 +2,10 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 
 metadata:
-  name: twnsPVC
+  name: twns-pvc
 spec:
   accessModes:
     - ReadWriteMany
   resources:
     requests:
-      storage: 5GB
+      storage: 5Gi
