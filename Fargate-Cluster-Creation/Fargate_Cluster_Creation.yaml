@@ -6,3 +6,8 @@ metadata:
   name: fargate-tw-cluster
   region: ap-southeast-1
 
+fargateProfiles:
+  - name: fargate-default
+    selectors:
+      - namespace: kube-system
+      - namespace: default
