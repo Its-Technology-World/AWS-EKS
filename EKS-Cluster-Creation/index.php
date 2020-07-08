@@ -16,7 +16,7 @@ print `free -m`;
 
 print "\n\n\n";
 
-print `df -g`;
+print `df -h`;
 
 ?>
 
