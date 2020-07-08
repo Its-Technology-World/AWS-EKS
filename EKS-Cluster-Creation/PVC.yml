@@ -4,6 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: twns-pvc
 spec:
+  storageClassName: tw-sc
   accessModes:
     - ReadWriteOnce
   resources:
