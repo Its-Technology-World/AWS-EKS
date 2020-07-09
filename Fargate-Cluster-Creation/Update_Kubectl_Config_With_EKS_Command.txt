@@ -1,0 +1,1 @@
+aws eks update-kubeconfig --name fargate-tw-cluster --region ap-southeast-1
