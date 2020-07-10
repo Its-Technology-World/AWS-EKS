@@ -6,7 +6,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: lwns
+    namespace: twns
 roleRef:
   kind: ClusterRole
   name: cluster-admin
