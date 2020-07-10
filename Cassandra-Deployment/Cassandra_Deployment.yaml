@@ -1,27 +1,15 @@
 apiVersion: v1
-kind: Service
-metadata:
-  name: cassandra
-  labels:
-    app: cassandra
-spec:
-  ports:
-    - port: 7000
-  selector:
-    app: cassandra
-    tier: best-database
-  type: LoadBalancer
----
-apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: twns-pvc
+  labels:
+    app: cassandra
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -34,6 +22,7 @@ spec:
     matchLabels:
       app: cassandra
       tier: best-database
+  replicas: 1
   strategy:
     type: RollingUpdate
   template:
@@ -45,9 +34,6 @@ spec:
       containers:
       - image: cassandra
         name: cassandra
-        ports:
-        - containerPort: 7000
-          name: cassandra
         volumeMounts:
         - name: cassandrapvc
           mountPath: /var/lib/cassandra
