@@ -7,7 +7,7 @@ provisioner: lw-course/aws-efs
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: efs-wordpress
+  name: efs-cassandra
   annotations:
     volume.beta.kubernetes.io/storage-class: "aws-efs"
 spec:
